@@ -2,11 +2,27 @@
 You'll post some JSON data to the URL you provide. The program filter that JSON data and return a few fields.
 
 ## Technical
-- Written in React using Typescript
-- Using functional components
-- Using React hooks for state managing
-- CSS styling (using classNames and media queries)
-- Unit test for function
+- ES6 syntax
+- Separated controllers, routers
+- Test case for controller function
+- Error handling for invalid JSON
+- Deployed to heroku (https://json-based-web-service.herokuapp.com/)
+- Heroku CD
+- Github CI pipeline 
+
+## Heroku deployment
+Using commands for heroku CI/CD (staging, production):
+
+- Login
+    `$ heroku login` 
+
+- Clone repository
+    `heroku git:clone -a json-based-web-service`
+
+- Deploy changes
+    `git add .`
+    `git commit -am "new changes"`
+    `git push heroku master`
 
 ## Available Scripts
 
@@ -21,7 +37,7 @@ Installing dependencies required for running the app
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The app will restart if you make edits.\
+The app will restart if you make changes.\
 
 ### `npm test`
 
