@@ -14,14 +14,19 @@ You'll post some JSON data to the URL you provide. The program filter that JSON 
 Using commands for heroku CI/CD (staging, production):
 
 - Login
+
     `$ heroku login` 
 
 - Clone repository
+
     `heroku git:clone -a json-based-web-service`
 
 - Deploy changes
+
     `git add .`
+
     `git commit -am "new changes"`
+    
     `git push heroku master`
 
 ## Available Scripts
